@@ -1,4 +1,4 @@
-module github.com/ess/cronenberg
+module github.com/ivan-leschinsky/cronenberg
 
 require (
 	github.com/konsorten/go-windows-terminal-sequences v1.0.1

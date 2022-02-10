@@ -1,8 +1,8 @@
 package cron
 
 import (
-	"github.com/ess/cronenberg/pkg/cronenberg"
-	"github.com/ess/cronenberg/pkg/cronenberg/os"
+	"github.com/ivan-leschinsky/cronenberg/pkg/cronenberg"
+	"github.com/ivan-leschinsky/cronenberg/pkg/cronenberg/os"
 )
 
 // NewRunner takes a Job and a Logger, using them to configure the returned

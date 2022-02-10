@@ -6,7 +6,7 @@ BINARY=cronenberg
 # git commit -am "One more change after the tags"
 VERSION=`./scripts/genver`
 BUILD=`date +%FT%T%z`
-PACKAGE="github.com/ess/cronenberg/cmd/cronenberg"
+PACKAGE="github.com/ivan-leschinsky/cronenberg/cmd/cronenberg"
 TARGET="builds/${BINARY}-${VERSION}"
 PREFIX="${TARGET}/${BINARY}-${VERSION}"
 TESTFILES=`go list ./... | grep -v /vendor/`
@@ -48,6 +48,7 @@ test:
 
 linux:
 	CGO_ENABLED=0 GOOS=linux GOARCH=386 go build ${LDFLAGS} -o ${TARGET}/${BINARY}-${VERSION}-linux-386 ${PACKAGE}
+	CGO_ENABLED=0 GOOS=linux GOARCH=aarch64 go build ${LDFLAGS} -o ${TARGET}/${BINARY}-${VERSION}-linux-386 ${PACKAGE}
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build ${LDFLAGS} -o ${TARGET}/${BINARY}-${VERSION}-linux-amd64 ${PACKAGE}
 
 darwin:

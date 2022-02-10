@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ess/cronenberg/mock"
-	"github.com/ess/cronenberg/pkg/cronenberg"
+	"github.com/ivan-leschinsky/cronenberg/mock"
+	"github.com/ivan-leschinsky/cronenberg/pkg/cronenberg"
 )
 
 var (

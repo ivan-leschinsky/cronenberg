@@ -4,7 +4,7 @@ package cron
 import (
 	cron "gopkg.in/robfig/cron.v2"
 
-	"github.com/ess/cronenberg/pkg/cronenberg"
+	"github.com/ivan-leschinsky/cronenberg/pkg/cronenberg"
 )
 
 // New creates a new instance of Cron.

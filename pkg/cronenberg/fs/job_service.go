@@ -3,7 +3,7 @@ package fs
 import (
 	yaml "gopkg.in/yaml.v2"
 
-	"github.com/ess/cronenberg/pkg/cronenberg"
+	"github.com/ivan-leschinsky/cronenberg/pkg/cronenberg"
 )
 
 // JobService is an object that knows how to load job definitions from a yaml

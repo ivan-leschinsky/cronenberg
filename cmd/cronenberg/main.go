@@ -5,9 +5,9 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/ess/cronenberg/pkg/cronenberg/cron"
-	"github.com/ess/cronenberg/pkg/cronenberg/fs"
-	"github.com/ess/cronenberg/pkg/cronenberg/logger"
+	"github.com/ivan-leschinsky/cronenberg/pkg/cronenberg/cron"
+	"github.com/ivan-leschinsky/cronenberg/pkg/cronenberg/fs"
+	"github.com/ivan-leschinsky/cronenberg/pkg/cronenberg/logger"
 )
 
 func main() {

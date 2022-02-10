@@ -1,12 +1,22 @@
 # cronenberg #
 
-[![Build Status](https://travis-ci.org/ess/cronenberg.svg?branch=master)](https://travis-ci.org/ess/cronenberg)
+[![Build Status](https://github.com/ivan-leschinsky/cronenberg/actions/workflows/build.yml/badge.svg)](https://github.com/ivan-leschinsky/cronenberg/actions/workflows/build.yml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/ess/cronenberg)](https://goreportcard.com/report/github.com/ess/cronenberg)
 [![Documentation](https://godoc.org/github.com/ess/cronenberg?status.svg)](http://godoc.org/github.com/ess/cronenberg)
 
 It's like cron, but kinda twisted.
 
-## Installation ##
+## Install to own docker image
+
+```Dockerfile
+# your dockerfile
+# ...
+COPY --from=vanopiano/cronenberg:latest /sbin/cronenberg /sbin/cronenberg
+# ...
+```
+
+
+## Original Installation ##
 
 You can either download the appropriate release from the [releases page](https://github.com/ess/cronenberg/releases) or install via `go get`:
 
