@@ -1,6 +1,7 @@
 package cron
 
 import (
+	"strings"
 	"github.com/ivan-leschinsky/cronenberg/pkg/cronenberg"
 	"github.com/ivan-leschinsky/cronenberg/pkg/cronenberg/os"
 )
@@ -25,7 +26,11 @@ func (runner *Runner) Name() string {
 
 // Spec returns the cron schedule spec for the Job that the Runner wraps.
 func (runner *Runner) Spec() string {
-	return "0 " + runner.job.When
+	if (len(strings.Split(runner.job.When, " ")) == 5) {
+		return "0 " + runner.job.When
+	} else {
+		return runner.job.When
+	}
 }
 
 // Env returns the environment map for the Job that the Runner wraps.
